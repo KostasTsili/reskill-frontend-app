@@ -9,8 +9,11 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+<<<<<<< HEAD
     "proxy":"http://localhost:5173",
 
+=======
+>>>>>>> 1b0721efa6b4c3910715adee8b800f3fe91f5165
   "dependencies": {
     "@fontsource/inter": "^5.1.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
