@@ -7,7 +7,6 @@ export default function SinglePostPage (){
     const {id:postId} = useParams();
     const {data:post,loading,error} = useFetchPosts({ endpoint: `http://localhost:3000/post/${postId}` });
 
-<<<<<<< HEAD
     const fakeUsers = [
         "User1425X",
         "TheMan565",
@@ -18,8 +17,6 @@ export default function SinglePostPage (){
         "TruckFighter"
     ];
 
-=======
->>>>>>> 1b0721efa6b4c3910715adee8b800f3fe91f5165
     if(loading) return <div>Loading Post...</div>;
     if(error) return <div>Error Loading post with id {postId} with error : {error.message}</div>
 
@@ -40,11 +37,7 @@ export default function SinglePostPage (){
         <div className="w-full sm:w-1/2 lg:w-3/5 px-4">
         <article>
             <h1 className="text-3xl font-bold mb-4">{post_title}</h1>
-<<<<<<< HEAD
             <h2 className="text-xl font-semibold text-gray-500 mb-4">Author : {post_userId?fakeUsers[post_userId]:"Unknown"}</h2>
-=======
-            <h2 className="text-xl font-semibold text-gray-500 mb-4">Subheading</h2>
->>>>>>> 1b0721efa6b4c3910715adee8b800f3fe91f5165
             <p className="text-lg text-gray-600 leading-relaxed">{post_body}</p>
          </article>
         </div>

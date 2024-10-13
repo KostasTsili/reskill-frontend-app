@@ -9,26 +9,15 @@ export default function MainContent({ threePosts, relatedListPosts}) {
   const relatedList = relatedListPosts;
 
   return (
-<<<<<<< HEAD
     <div className="w-full mx-auto px-4">
       <h1 className="font-bold text-6xl pt-8 text-left">Posts List</h1>
       {threePosts.length > 0 ? (
         <MainPostPreview id="main-post" post={threePosts[0]} />
-=======
-    <div className="w-full">
-      <h1 className="font-bold text-4xl pt-8">Posts List</h1>
-      {threePosts.length > 0 ? (
-        <MainPostPreview post={threePosts[0]} />
->>>>>>> 1b0721efa6b4c3910715adee8b800f3fe91f5165
       ) : (
         <div>Loading....</div>
       )}
       <RelatedPosts posts={relatedPosts} />
-<<<<<<< HEAD
       <RelatedList id="posts-list" posts={relatedList}/>
-=======
-      <RelatedList posts={relatedList}/>
->>>>>>> 1b0721efa6b4c3910715adee8b800f3fe91f5165
     </div>
     
   );

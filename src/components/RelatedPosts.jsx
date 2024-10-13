@@ -2,14 +2,8 @@ import PostPreview from "./PostPreview";
 import PropTypes from "prop-types";
 
 export default function RelatedPosts({ posts }) {
-<<<<<<< HEAD
   const config = {
     container: "aspect-[5/4]",
-=======
-
-  const config = {
-    container: "",
->>>>>>> 1b0721efa6b4c3910715adee8b800f3fe91f5165
     Link: "",
     image: "rounded-md w-full object-cover",
     atl: "Article Thumbnail",
@@ -17,7 +11,6 @@ export default function RelatedPosts({ posts }) {
     width: 150,
   };
 
-<<<<<<< HEAD
   const fakeUsers = [
     "User1425X",
     "TheMan565",
@@ -51,27 +44,6 @@ export default function RelatedPosts({ posts }) {
       </div>
     </div>
   );
-=======
-  return (
-    <div className="w-full flex justify-center py-10">
-      <div className="flex gap-8 max-w-4xl">
-        {posts.length !==0 ? (
-          <>
-            <div className="flex-1">
-              <PostPreview postData={{ post: posts[0], config: config }} />
-            </div>
-            <div className="flex-1">
-              <PostPreview postData={{ post: posts[1], config: config }} />
-            </div>
-          </>
-        ) : (
-          <div>Loading Related Posts....</div>
-        )}
-      </div>
-    </div>
-  );
-  
->>>>>>> 1b0721efa6b4c3910715adee8b800f3fe91f5165
 }
 
 RelatedPosts.propTypes = {

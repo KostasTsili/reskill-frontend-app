@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import MobileToolBar from "./MobileToolBar";
 import { useState } from "react";
 
@@ -41,17 +40,4 @@ export default function MobileMenu (){
           
         </div>
       );
-=======
-export default function MobileMenu (){
-
-
-
-    return (
-        <div className="">
-            <button id="hamburger-button" className="md:hidden text-4xl dark:text-white">
-               &#9776;
-            </button>
-        </div>
-    )
->>>>>>> 1b0721efa6b4c3910715adee8b800f3fe91f5165
 }

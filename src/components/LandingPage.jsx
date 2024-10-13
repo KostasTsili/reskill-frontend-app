@@ -18,7 +18,6 @@ export default function LandingPage() {
     const randomizePosts = (posts) => {
         const rand = [];
         const uniqueIds = new Set();
-<<<<<<< HEAD
         //I take a random post, then I find two more related posts using the post_userId.
         const randomPost = posts[Math.floor(Math.random()* posts.length)];
         rand.push(randomPost);
@@ -29,14 +28,6 @@ export default function LandingPage() {
             if (!uniqueIds.has(tempPost.id) && tempPost.post_userId === selectedUser ) {
                 uniqueIds.add(tempPost.id);
                 rand.push(tempPost);
-=======
-
-        while (rand.length < 3 && rand.length < posts.length) {
-            const randomPost = posts[Math.floor(Math.random() * posts.length)];
-            if (!uniqueIds.has(randomPost.id)) {
-                uniqueIds.add(randomPost.id);
-                rand.push(randomPost);
->>>>>>> 1b0721efa6b4c3910715adee8b800f3fe91f5165
             }
         }
         setThreePosts(rand);
@@ -51,11 +42,7 @@ export default function LandingPage() {
     if (error) return <div>Error: {error.message}</div>;
 
     return !loading&& readyToRender ?(
-<<<<<<< HEAD
         <div className="max-w-max mx-auto  dark:bg-black dark:text-white">
-=======
-        <div className="mx-10  dark:bg-black dark:text-white">
->>>>>>> 1b0721efa6b4c3910715adee8b800f3fe91f5165
            <MainContent threePosts={threePosts} relatedListPosts={postList} />
         </div>):(<div>Loading...</div>
     );
