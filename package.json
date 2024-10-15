@@ -9,8 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-    "proxy":"http://localhost:5173",
-
+  "proxy": "http://localhost:5173",
   "dependencies": {
     "@fontsource/inter": "^5.1.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",

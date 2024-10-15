@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useState } from "react";
+import error from '../../assets/error.jpg'
 
 export default function PostImageLink({data,config}){
 
@@ -22,7 +23,7 @@ export default function PostImageLink({data,config}){
     return(
         <div className={container}>
             {!isLoaded && !hasError && <div>Loading Image...</div>}
-            {hasError && <img src="../../assets/error.jpg" alt="image failed to load" className="object-cover"/>}
+            {hasError && <img src={error} alt={alt} className="object-cover"/>}
         <Link className={link} to={`/post/${id}`}>
             <img 
             className={`${image} h-3/4 w-full`} 

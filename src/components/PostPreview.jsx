@@ -13,6 +13,7 @@ const {id,post_title,photo_thumbnailUrl,post_userId} = postData.post;
 const {config} = postData;
 
 
+
     
     return (
         <>
