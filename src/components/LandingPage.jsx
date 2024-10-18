@@ -7,7 +7,9 @@ export default function LandingPage() {
     const [threePosts, setThreePosts] = useState([]);
     const [readyToRender, setReadyToRender] = useState(false);
 
-    const { data: posts, loading, error } = useFetchPosts({ endpoint: "http://localhost:3000/posts" });
+   // const { data: posts, loading, error } = useFetchPosts({ endpoint: "http://localhost:3000/posts" });
+
+    const { data: posts, loading, error } = useFetchPosts({ endpoint: "https://reskill-backend-ktsili.onrender.com/posts" });
 
     useEffect(() => {
         if (!loading && posts.length > 0) {
