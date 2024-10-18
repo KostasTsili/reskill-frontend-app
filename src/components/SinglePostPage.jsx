@@ -5,7 +5,8 @@ import useFetchPosts from "../hooks/api/useFetchPosts";
 
 export default function SinglePostPage (){
     const {id:postId} = useParams();
-    const {data:post,loading,error} = useFetchPosts({ endpoint: `http://localhost:3000/post/${postId}` });
+    //const {data:post,loading,error} = useFetchPosts({ endpoint: `http://localhost:3000/post/${postId}` });
+    const {data:post,loading,error} = useFetchPosts({ endpoint: `https://reskill-backend-ktsili.onrender.com/post/${postId}` });
 
     const fakeUsers = [
         "User1425X",
